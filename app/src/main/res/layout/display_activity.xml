@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_blue"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!--<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Buees Driver"
+        android:textColor="#000000"
+        android:textSize="30dp" />-->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:padding="10dp"
+        android:text="Seleccione el bus:" />
+
+    <Spinner
+        android:id="@+id/sp_placas"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:padding="10dp"
+        android:text="Seleccione la ruta:" />
+
+    <Spinner
+        android:id="@+id/sp_rutas"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center"
+        android:stretchColumns="2" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Start" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Stop" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_acerca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acerca de" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir" />
+
+</LinearLayout>
